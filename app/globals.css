@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom selection and scroll */
+::selection {
+  background: rgba(124, 58, 237, 0.35);
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-irisBg text-white;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
